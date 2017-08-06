@@ -37,8 +37,9 @@ section:nth-of-type(3) {
   padding-bottom: 25px;
 }
 
-.writingExceptFirst {
-  margin-top: -15px;
+.articles {
+  margin-top: 20px;
+  margin-left: 20px; 
 }
 
 /* end of writing section */
@@ -50,7 +51,8 @@ section:nth-of-type(4) {
 }
 
 #connect-h2 {
-  margin-top: -50px;
+  /*margin-top: -50px;*/
+  margin-bottom: 30px;
 }
 
 h2 {
@@ -78,10 +80,6 @@ button a {
   justify-content: center;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
-}
-
-.flex-item {
-  margin: 5%;
 }
 
 .custombtn {
@@ -119,10 +117,12 @@ h2 span {
 .verticalfc {
   -webkit-flex-direction: column !important;
   flex-direction: column !important;
+  padding-bottom: 15%;
 }
 
 .smallfc {
   width: 300px;
+  margin: 5%;
 }
 
 p {
@@ -151,7 +151,8 @@ a:hover {
 }
 
 #socials {
-  margin-top: -20px;
+  margin-top: 20px;
+  margin-bottom: 25px;
 }
 
 .fa-linkedin {
