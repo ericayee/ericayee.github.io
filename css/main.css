@@ -1,7 +1,7 @@
 body {
     margin: 60px auto;
     width: 70%;
-    font-family:'Trebuchet', sans-serif;
+    font-family:'Roboto', sans-serif;
 
 }
 nav ul, footer ul {
@@ -34,9 +34,9 @@ footer {
     font-size: .8em;
 }
 
-p.top {  
+p.top {
   margin-bottom:0;
-  font-style: italic; 
+  font-style: italic;
   font-size: 1.25em;
   color: #999999;
 }
