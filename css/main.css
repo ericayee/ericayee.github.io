@@ -1,5 +1,5 @@
 body {
-    margin: 60px auto;
+    margin: 20px auto;
     width: 70%;
     font-family:'Roboto', sans-serif;
 
@@ -43,4 +43,11 @@ p.top {
 
 p.bottom {
   margin-top:0
+}
+
+/*MEDIA QUERIES*/
+@media screen and(max-width:980px){
+	#wrapper {
+		font-size:2em;
+	}
 }
