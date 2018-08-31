@@ -22,7 +22,6 @@ a:hover {
 }
 h1 {
     font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p, ul {
     font-size: 1.5em;
@@ -42,7 +41,43 @@ p.top {
 }
 
 p.bottom {
-  margin-top:0
+  margin-top:0;
+  font-size: .9em
+}
+
+ul.none {
+  list-style: none;
+  padding:0;
+  margin:0
+}
+
+p.pub {
+  margin-bottom:0;
+  font-weight: bold
+  font-size: 1.25em;
+}
+
+auth {
+  font-size: .75em;
+  color: #999999;
+  font-style: italic;
+}
+
+button {
+  background-color: transparent;
+  border:1px solid;
+	padding:.5em;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color:#d3d3d3;
+  color: #000;
+  opacity: .5;
+}
+
+button:focus{
+  background-color:#e6e6fa;
 }
 
 /*MEDIA QUERIES*/
@@ -50,4 +85,5 @@ p.bottom {
 	#wrapper {
 		font-size:2em;
 	}
+
 }
