@@ -1,0 +1,25 @@
+---
+layout: default
+title: Erica Yee
+---
+<div class="coding">
+	<h1>Coding: San Francisco Chronicle work</h1>
+
+  <h2><a target="_blank" href="https://projects.sfchronicle.com/trackers/bay-area-fog/">Bay Area Fog Tracker</a></h2>
+  <h2><a target="_blank" href="https://projects.sfchronicle.com/trackers/bay-area-fog/">Bay Area homelessness: 89 answers to your questions</a></h2>
+	<h2><a target="_blank" href="https://projects.sfchronicle.com/trackers/bay-area-fog/">SF Homeless Project: 24 hours inside the city's crisis</a></h2>
+  <h2>Cal Fire tracker</h2>
+  <figure>
+    <img class="small-pic" src="assets/calfirefeed.png" alt="cal fire feed screenshot" />
+    <figcaption>Screenshot of automated Slack message sent by my Python script that checks the Cal Fire website</figcaption>
+  </figure>
+  <h4>Background</h4>
+  <p>The Chronicle has a <a target="_blank" href="https://projects.sfchronicle.com/trackers/california-fire-map/">California Fire Tracker</a>, one of the most viewed pages ever on the site. The information is manually retrieved and inputted from the <a target="_blank" href="https://www.fire.ca.gov/">Cal Fire</a> website. Before my internship, Cal Fire changed its website and removed the RSS feed that the Chronicle team had used to send automated Slack alerts when updated. Instead, fire updates were now added to a CSV file on the site.</p>
+
+  <h4>What I did</h4>
+  <p>I wrote a Python script that connected to a Slack webhook my supervisor set up to check the CSV url every 10 minutes and notify the team if anything changed. This was quite a challenge for me, as I had not used much Python before. My first version partly worked, then my supervisor suggested a different way which I implemented and it turned out to be much more reliable.</p>
+
+  <h4>What I learned</h4>
+  <p>This relatively small script was very frustrating because I couldn’t always immediately tell why certain things didn’t work, but ultimately rewarding because it fixed a workflow issue for the digital team.</p>
+
+</div>
