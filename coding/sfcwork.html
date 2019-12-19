@@ -6,8 +6,39 @@ title: Erica Yee
 	<h1>Coding: San Francisco Chronicle work</h1>
 
   <h2><a target="_blank" href="https://projects.sfchronicle.com/trackers/bay-area-fog/">Bay Area Fog Tracker</a></h2>
-  <h2><a target="_blank" href="https://projects.sfchronicle.com/trackers/bay-area-fog/">Bay Area homelessness: 89 answers to your questions</a></h2>
-	<h2><a target="_blank" href="https://projects.sfchronicle.com/trackers/bay-area-fog/">SF Homeless Project: 24 hours inside the city's crisis</a></h2>
+	<img class="med-pic" src="assets/fogtracker_desktop.jpg" alt="fog tracker screenshot" />
+	<h4>Background</h4>
+	<p>The Chronicle dev team has put out a series of trackers in the last few years, including California <a target="_blank" href="https://projects.sfchronicle.com/trackers/california-fire-map/">wildfires</a> and San Francisco <a target="_blank" href="https://projects.sfchronicle.com/trackers/sf-car-breakins/">car break-ins</a>. Near the end of my internship, I was asked to implement a “lighter,” more “whimsical” tracker for one of San Francisco’s most famous phenomenons: fog. I appreciated my supervisors wanting me to have a project I could completely own. Due to a variety of reasons (time constraints, other projects I pitched in on, my limited skills) I was unable to complete the project during my internship. However, my supervisor Evan Wagstaff was able to finish the front-end and turned the project live soon after, for which I am very grateful.</p>
+
+	<h4>What I did</h4>
+	<p>When first given the idea, I floundered around for awhile just trying to figure out what was possible for this project. After consulting a <a target="_blank" href="http://home.chpc.utah.edu/~u0553130/Brian_Blaylock/home.html">meteorology PhD student</a> who posted some tutorials on GitHub and lots of experimenting in Jupyter Notebooks, I wrote a Python script that retrieves data from the NOAA’s GOES-17 satellite, which are publicly available on <a target="_blank" href="https://registry.opendata.aws/noaa-goes/">Amazon Web Services</a>, and converts them to images. The script initially crashed the Chronicle’s virtual computer, but eventually Evan and I managed to reduce the computing power it needed.</p>
+
+	<h4>What I learned</h4>
+	<p>On the design side, I originally riffed off our previous tracker template. But when one of the designers saw that idea, he reimagined it in a much more visually interesting way that I never would’ve thought of on my own. The final presentation ended up being quite close to his mockup. From this experience, I learned that I wanted to get better at thinking at design and how to approach projects before even starting to code. That’s why I signed up for an introductory design course the following semester.</p>
+	<p>Overall, this project taught me that projects don’t always turn out the way you envision them at the beginning. There were even points at which I thought it wasn’t even possible because I couldn’t figure out the back-end data retrieval. But I am so grateful that the team at the Chronicle supported me and carried it through. Now I have a fun project I'm really proud of.</p>
+
+  <h2><a target="_blank" href="https://projects.sfchronicle.com/sf-homeless/homeless-questions/">Bay Area homelessness: 89 answers to your questions</a></h2>
+	<img class="med-pic" src="assets/qanda.gif" alt="q&a gif"  />
+	<h4>Background</h4>
+	<p>This piece was part of the annual SF Homeless Project in which Bay Aera newsrooms, led by the Chronicle, focus coverage on the region's homelessness crisis. After I expressed interest in gaining more experience creating mockups, my supervisor asked me to design this Q&A project.</p>
+
+	<h4>What I did</h4>
+	<p>My goal was to make it clear that the Chronicle had thoroughly answered all the questions from readers, as well as make the page easy to navigate. I was inspired by the layout of the NYT's <a target="_blank" href="https://www.nytimes.com/interactive/2018/04/06/style/meghan-markle-prince-harry-royal-wedding.html">Royal Wedding FAQ</a>. After my design (using Figma) was approved, I coded the page using React.js and ArchieML to convert the text content from Google Docs to JSON.</p>
+
+	<h4>What I learned</h4>
+	<p>Since I led the design and development of this project, I learned a lot about iteratively improving based on feedback. I was also pleasantly surprised at how much time our audience spent reading this text-based project, with a significant portion even scrolling all the way to the bottom of the page.</p>
+
+	<h2><a target="_blank" href="https://projects.sfchronicle.com/sf-homeless/24-hours-homelessness/">One day, one city, no relief: 24 hours inside the city's crisis</a></h2>
+	<img class="med-pic" src="assets/24hours.gif" alt="24 hours gif" />
+	<h4>Background</h4>
+	<p>This was a huge, <a target="_blank" href="http://www.hillmanfoundation.org/sidney-awards/san-francisco-chronicle-team-wins-august-sidney-documenting-24-hours-homelessness">award-winning</a> project documenting homelessness in San Francisco with dozens of reporters, photographers, editors, designers and developers. I was privileged to see the project lifecycle from brainstorming to publication.</p>
+
+	<h4>What I did</h4>
+	<p>I mostly helped with style tweaks and testing the project on different devices and browsers. I'm most proud of adding volume toggle buttons on the embedded videos through a React package's API.</p>
+
+	<h4>What I learned</h4>
+	<p>The positive feedback on this project from the rest of the newsroom and external sources, including other news organizations, was very gratifying.</p>
+
   <h2>Cal Fire tracker</h2>
   <figure>
     <img class="small-pic" src="assets/calfirefeed.png" alt="cal fire feed screenshot" />
@@ -17,7 +48,7 @@ title: Erica Yee
   <p>The Chronicle has a <a target="_blank" href="https://projects.sfchronicle.com/trackers/california-fire-map/">California Fire Tracker</a>, one of the most viewed pages ever on the site. The information is manually retrieved and inputted from the <a target="_blank" href="https://www.fire.ca.gov/">Cal Fire</a> website. Before my internship, Cal Fire changed its website and removed the RSS feed that the Chronicle team had used to send automated Slack alerts when updated. Instead, fire updates were now added to a CSV file on the site.</p>
 
   <h4>What I did</h4>
-  <p>I wrote a Python script that connected to a Slack webhook my supervisor set up to check the CSV url every 10 minutes and notify the team if anything changed. This was quite a challenge for me, as I had not used much Python before. My first version partly worked, then my supervisor suggested a different way which I implemented and it turned out to be much more reliable.</p>
+  <p>I wrote a Python script that connected to a Slack webhook my supervisor set up to check the CSV url every 10 minutes and notify the team if there was a new fire or if new information had been added to existing fires. This was quite a challenge for me, as I had not used much Python before. My first version partly worked, then my supervisor suggested a different way which I implemented and it turned out to be much more reliable.</p>
 
   <h4>What I learned</h4>
   <p>This relatively small script was very frustrating because I couldn’t always immediately tell why certain things didn’t work, but ultimately rewarding because it fixed a workflow issue for the digital team.</p>

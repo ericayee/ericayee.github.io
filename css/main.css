@@ -107,6 +107,14 @@ figcaption {
   max-width: 300px;
 }
 
+.med-pic {
+  max-width: 500px;
+}
+
+h4 {
+  margin-bottom: -10px;
+}
+
 /*MEDIA QUERIES*/
 @media screen and(max-width:980px){
 	#wrapper {
