@@ -21,7 +21,7 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 3em;
+    font-size: 2em;
 }
 p, ul {
     font-size: 1.2em;
@@ -84,7 +84,7 @@ button:focus{
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 4px;
-    width: 200px;
+    max-width: 100%;
 }
 
 img:hover {
@@ -96,11 +96,12 @@ img:hover {
 }
 
 figure {
-  margin-left: 0;
+  margin: 10px;
 }
 
 figcaption {
   font-style: italic;
+  margin-bottom: 5px;
 }
 
 .small-pic {
@@ -115,10 +116,65 @@ figcaption {
   margin-bottom: -10px;
 }
 
+.report-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.report-flex-child {
+  width: 40%;
+}
+
+#keywords-table {
+  margin-left: 10px;
+}
+
 /*MEDIA QUERIES*/
-@media screen and(max-width:980px){
+@media screen and (max-width:980px){
 	#wrapper {
 		font-size:2em;
 	}
+
+}
+
+@media screen and (max-width:400px){
+  body {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  .small-pic {
+    max-width: 100%;
+  }
+
+  .med-pic {
+    max-width: 100%;
+  }
+
+  .report-flex {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .report-flex-child {
+    width: 100%;
+  }
+
+  figure {
+    margin: 10px 0;
+  }
+
+  #keywords-table {
+    margin-left: 0;
+  }
 
 }
