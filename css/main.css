@@ -131,6 +131,10 @@ figcaption {
   margin-left: 10px;
 }
 
+.black-border {
+  border: 0.5px solid black;
+}
+
 /*MEDIA QUERIES*/
 @media screen and (max-width:980px){
 	#wrapper {
