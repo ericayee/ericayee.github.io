@@ -1,6 +1,6 @@
 body {
     margin: 20px auto;
-    width: 70%;
+    width: 50%;
     font-family:'Roboto', sans-serif;
 
 }
@@ -110,6 +110,20 @@ figcaption {
 
 .med-pic {
   max-width: 500px;
+}
+
+.welcome-flex-parent {
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.welcome-flex-child {
+
+}
+
+#welcome-image {
+  width: 300px;
 }
 
 .less-bot-marg {
