@@ -1,6 +1,6 @@
 body {
     margin: 20px auto;
-    width: 70%;
+    width: 50%;
     font-family:'Roboto', sans-serif;
 
 }
@@ -14,17 +14,18 @@ nav ul li, footer ul li {
     margin-right: 20px;
 }
 a {
-    text-decoration: none;
     color: #999;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: none;
+    background-color: #787878;
+    color: #fff;
 }
 h1 {
-    font-size: 3em;
+    font-size: 2em;
 }
 p, ul {
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 1.4em;
     color: #333;
 }
@@ -84,17 +85,115 @@ button:focus{
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 4px;
-    width: 200px;
+    max-width: 100%;
 }
 
 img:hover {
     box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
 }
 
+.tab {
+  margin-left: 40px;
+}
+
+figure {
+  margin: 10px;
+}
+
+figcaption {
+  font-style: italic;
+  margin-bottom: 5px;
+}
+
+.small-pic {
+  max-width: 300px;
+}
+
+.med-pic {
+  max-width: 500px;
+}
+
+.welcome-flex-parent {
+  margin-bottom: 20px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.welcome-flex-child {
+
+}
+
+#welcome-image {
+  width: 200px;
+}
+
+.less-bot-marg {
+  margin-bottom: -10px;
+}
+
+.report-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.report-flex-child {
+  width: 40%;
+}
+
+#keywords-table {
+  margin-left: 10px;
+}
+
+.black-border {
+  border: 0.5px solid black;
+}
+
 /*MEDIA QUERIES*/
-@media screen and(max-width:980px){
+@media screen and (max-width:980px){
 	#wrapper {
 		font-size:2em;
 	}
+
+}
+
+@media screen and (max-width:400px){
+  body {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  h2 {
+    font-size: 1.25em;
+  }
+
+  .small-pic {
+    max-width: 100%;
+  }
+
+  .med-pic {
+    max-width: 100%;
+  }
+
+  .report-flex {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .report-flex-child {
+    width: 100%;
+  }
+
+  figure {
+    margin: 10px 0;
+  }
+
+  #keywords-table {
+    margin-left: 0;
+  }
 
 }
