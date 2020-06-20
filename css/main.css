@@ -54,7 +54,7 @@ ul.none {
 
 p.pub {
   margin-bottom:0;
-  font-weight: bold
+  font-weight: bold;
   font-size: 1.25em;
 }
 
@@ -85,7 +85,7 @@ button:focus{
     border: 1px solid #ddd;
     border-radius: 4px;
     padding: 4px;
-    max-width: 100%;
+    max-width: 300px;
 }
 
 img:hover {
@@ -119,9 +119,9 @@ figcaption {
   flex-flow: row wrap;
 }
 
-.welcome-flex-child {
+/* .welcome-flex-child {
 
-}
+} */
 
 #welcome-image {
   width: 200px;
