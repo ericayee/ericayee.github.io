@@ -47,13 +47,13 @@ headerTemplate.innerHTML = `
   </style>
   <header>
     <section class="container-top">
-      <a href="index.html">
+      <a href="/">
         <img src="files/ericayee_portrait_illustration.png" alt="portrait illustration of me" />
       </a>
     </section>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="work.html">Work</a></li>
         <li><a href="fun.html">Fun</a></li>
       </ul>
