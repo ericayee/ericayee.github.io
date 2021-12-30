@@ -42,7 +42,7 @@ headerTemplate.innerHTML = `
     }
 
     .container-top img {
-        width: 200px;
+        width: 150px;
     }
   </style>
   <header>
