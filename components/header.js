@@ -7,6 +7,7 @@ headerTemplate.innerHTML = `
       display: flex;
       align-items: center;
       justify-content: center;
+      padding-top: 0.5rem;
     }
 
     ul {
@@ -15,6 +16,7 @@ headerTemplate.innerHTML = `
     }
     
     ul li {
+      font-size: 1.5rem;
       list-style: none;
       display: inline;
     }
@@ -45,7 +47,9 @@ headerTemplate.innerHTML = `
   </style>
   <header>
     <section class="container-top">
+      <a href="index.html">
         <img src="files/ericayee_portrait_illustration.png" alt="portrait illustration of me" />
+      </a>
     </section>
     <nav>
       <ul>
