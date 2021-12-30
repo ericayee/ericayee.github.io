@@ -7,6 +7,7 @@ footerTemplate.innerHTML = `
           max-width: 750px;
           margin: 5rem auto 0;
       padding: 1em;
+      text-align: center;
     }
 
       ul {
