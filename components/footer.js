@@ -39,7 +39,7 @@ a:hover {
       <li><a href="files/EricaYee_Resume.pdf">resume</a></li>
     </ul>
     <div>
-        2022 Erica Yee
+        2024 Erica Yee
     </div>
   </footer>
 `;
